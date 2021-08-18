@@ -9,9 +9,9 @@ export default function Home() {
         alt="snake"
         className="absolute object-cover w-full h-full"
       />
-      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64  px-8">
-        <h1 className="text-6xl text-green-50 font-bold cursive leading-none lg:leading-snug home-name ">
-          Hi. I'm Rob.
+      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-75  px-">
+        <h1 className="text-6xl text-white font-bold cursive leading-none  lg:leading-snug home-name ">
+          Welcome to my portfolio.
         </h1>
       </section>
     </main>
