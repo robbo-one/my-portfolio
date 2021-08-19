@@ -28,7 +28,7 @@ export default function About() {
  
   
   return (
-      <main className="relative">
+      <main className="relative bg-black">
           <img src={parrot} alt="parrot" className="absolute w-full" />
           <div className="p-10 lg:pt-48 container mx-auto relative">
               <section className=" bg-grey-50 opacity-80 hover:bg-black   rounded-lg shadow-2xl lg:flex p-20">
