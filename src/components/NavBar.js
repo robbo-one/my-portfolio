@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
   return (
-    <header className="bg-gray-900">
+    <header className="bg-gray-900 border-red-400 border-double border-4 ">
       {" "}
       {/*stands for background color-red-darkness level of 600*/}
       <div className="container mx-auto flex justify-between">
@@ -12,32 +12,32 @@ export default function NavBar() {
         {/* creates a container around div,
              auto margin around x axis,flex is how we will put everything within this div,
             justify between will make spacing between each thing */}
-        <nav className="flex">
+        <nav className="flex space-x-8">
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
-            className=" inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-200 text-4xl font-bold cursive tracking-widest"
+            className=" inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-200 text-5xl font-bold cursive tracking-widest"
           >
             Robbo<h5>Home</h5>
           </NavLink>
           <NavLink
             to="/post"
-            className="inline-flex items-center py-3 px-3 my-6 pr-10 rounded text-red-200 hover:text-green-500"
+            className="inline-flex items-center py-3 px-3 my-6 pr-10 rounded text-red-200 text-xl hover:text-green-400"
             activeClassName="text-red-100 bg-red-700"
           >
             Blog Posts
           </NavLink>
           <NavLink
             to="/project"
-            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 hover:text-green-500"
+            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-xl hover:text-green-400"
             activeClassName="text-red-100 bg-red-700"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
-            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 hover:text-green-500"
+            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-xl hover:text-green-400"
             activeClassName="text-red-100 bg-red-700"
           >
             About Me!
@@ -48,21 +48,24 @@ export default function NavBar() {
             url="https://github.com/robbo-one"
             className="mr-4"
             target="_blank"
-            fgColor="#fff"
-            style={{ height: 50, width: 50 }}
+            fgColor="#black"
+            bgColor="#fff"
+          style={{ height: 50, width: 50 }}
           />
           <SocialIcon 
             url="https://www.linkedin.com/in/robbo123/"
-            className="mr-4"
+            className="mr-4 "
             target="_blank"
-            fgColor="#fff"
+            fgColor="#black"
+            bgColor="#fff"
             style={{ height: 50, width: 50 }}
           />
           <SocialIcon 
             url="http://www.im-creator.com/free/robbedphotography/photography"
-            className="mr-4"
+            className="mr-4 bgcolor-white"
             target="_blank"
-            fgColor="#fff"
+            fgColor="black"
+            bgColor="#fff"
             style={{ height: 50, width: 50 }}
           />
         </div>
