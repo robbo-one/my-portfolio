@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../pexels-jan-kopřiva-3280908.jpg";
+import image from "../parrot.jpg";
 
 export default function Home() {
   return (
