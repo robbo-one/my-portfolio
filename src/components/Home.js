@@ -10,7 +10,7 @@ export default function Home() {
         className="absolute object-cover w-full h-full"
       />
       <section className="relative flex justify-center min-h-screen lg:pt-75">
-        <h1 className="text-8xl  text-white font-bold cursive pt-3 ml-80 absolute">
+        <h1 className="text-8xl  text-white font-bold cursive pt-1 ml-80 absolute">
           Welcome to my portfolio.
         </h1>
       </section>
