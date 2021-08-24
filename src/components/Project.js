@@ -75,6 +75,7 @@ export default function Project() {
                                 View the Project{" "}
                                 <span role="img" aria-label="right pointer">👉</span>
                                 </a>
+                                <p className="text-xl "> {project.tags}</p>
                                
                         </div>
                     </article>
