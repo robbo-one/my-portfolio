@@ -76,7 +76,7 @@ export default function Project() {
                                 <span role="img" aria-label="right pointer">👉</span>
                                 </a>
                                 
-                    <p>{project.tags}</p>
+                    {/* <p>{project.tags}</p> */}
                                 
                                
                         </div>
