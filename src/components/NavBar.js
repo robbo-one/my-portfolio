@@ -12,12 +12,12 @@ export default function NavBar() {
         {/* creates a container around div,
              auto margin around x axis,flex is how we will put everything within this div,
             justify between will make spacing between each thing */}
-        <nav className="flex space-x-8">
+        <nav className="flex space-x-1">
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
-            className=" inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-200 text-5xl font-bold cursive tracking-widest"
+            className=" inflex-flex items-center py-2 px-5 mr-10 text-red-100 hover:text-green-200 text-5xl font-bold cursive tracking-widest"
           >
             Robbo<h5>Home</h5>
           </NavLink>

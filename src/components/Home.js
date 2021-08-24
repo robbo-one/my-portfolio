@@ -6,11 +6,11 @@ export default function Home() {
     <main>
       <img
         src={image}
-        alt="snake"
+        alt="parrot"
         className="absolute object-cover w-full h-full"
       />
       <section className="relative flex justify-center min-h-screen lg:pt-75">
-        <h1 className="text-6xl text-white font-bold cursive leading-none lg:leading-snug home-name ">
+        <h1 className="text-6xl text-white font-bold cursive leading-none home-name ">
           Welcome to my portfolio.
         </h1>
       </section>
