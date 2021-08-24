@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
   return (
-    <header className="bg-gray-900 border-red-400 border-double border-4 ">
+    <header className="bg-gray-900 border-red-400 border-double border-4">
       {" "}
       {/*stands for background color-red-darkness level of 600*/}
       <div className="container mx-auto flex justify-between">

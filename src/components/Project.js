@@ -4,22 +4,32 @@ import  sanityClient from  "../client.js"
 export default function Project() {
     const [projectData, setProjectData] = useState(null)
 
+    
+
     useEffect(() => {
         sanityClient
-        .fetch(
-            `*[_type == "project"]{
-                title,   
-                date,
-                location,
-                description,
-                projectType,
-                link,
-                tags,
-            }`
-        )
-        .then((data) => setProjectData(data))
-        .catch(console.error)
-    }, [])
+          .fetch(
+            `*[_type == 'project']{
+          title,
+          date,
+          location,
+          description,
+          project,
+          link,
+          projectType,
+          tags,
+          mainImage{
+            asset->{
+              _id,
+              url
+            },
+            alt
+          }
+        }`
+          )
+          .then((data) => setProjectData(data)) 
+          .catch(console.error);
+      }, []);
 
     return (
         <main className="bg-white min-h-screen p-12">
@@ -29,9 +39,8 @@ export default function Project() {
                     Welcome to my projects page!
                 </h2>
                 <section className="grid grid-cols-2 gap-8">
-                    {projectData &&
-                     projectData.map((project, index) => (
-                    <article className=" bg-gray-200 relative rounded-lg shadow-xl bg-white p-16">
+                    {projectData && projectData.map((project, index) => (
+                    <article key={project.title} className=" bg-gray-200 relative rounded-lg shadow-xl bg-white p-16">
                         <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-green-500">
                            <a href={project.link}  
                            alt={project.title}       
@@ -51,18 +60,22 @@ export default function Project() {
                             <span>
                                 <strong className="font-bold">Type</strong>{" "}
                                 {project.projectType}</span>
-                            <p className="my-6 text-lg text-black leading-relaxed">
-                                {project.description}
-                                </p>
                                 
+                            <p className="my-6 text-lg text-black leading-relaxed">
+                           
+                            {project.description}
+                                </p>
+                                <img src={project?.mainImage?.asset?.url} alt={project.title} />
                                 <a href={project.link}
                                  rel="noopener noreferrer"
                                   target="_blank" 
                                   className="text-red-500 font-bold hover:underline hover:text-green-500 text-xl"
                                 >
+                                    <div></div>
                                 View the Project{" "}
                                 <span role="img" aria-label="right pointer">👉</span>
                                 </a>
+                               
                         </div>
                     </article>
                     ))}
