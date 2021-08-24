@@ -35,12 +35,12 @@ export default function Project() {
         <main className="bg-white min-h-screen p-12">
             <section className="container mx-auto">
                 <h1 className="text-8xl flex justify-center cursive">My Projects</h1>
-                <h2 className="text-lg text-gray-600 flex justify-center mb-12">
+                <h2 className="text-lg text-gray-600  flex justify-center mb-12">
                     Welcome to my projects page!
                 </h2>
-                <section className="grid grid-cols-2 gap-8">
+                <section className="grid  grid-cols-2 gap-8">
                     {projectData && projectData.map((project, index) => (
-                    <article key={project.title} className=" bg-gray-200 relative rounded-lg shadow-xl bg-white p-16">
+                    <article key={project.title} className=" border-solid border-2 border-black bg-gray-200 relative rounded-lg shadow-xl bg-white p-16">
                         <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-green-500">
                            <a href={project.link}  
                            alt={project.title}       
@@ -69,13 +69,15 @@ export default function Project() {
                                 <a href={project.link}
                                  rel="noopener noreferrer"
                                   target="_blank" 
-                                  className="text-red-500 font-bold hover:underline hover:text-green-500 text-xl"
+                                  className="text-red-500 font-bold hover:underline hover:text-green-500 text-3xl"
                                 >
                                     <div></div>
                                 View the Project{" "}
                                 <span role="img" aria-label="right pointer">👉</span>
                                 </a>
-                                <p className="text-xl "> {project.tags}</p>
+                                
+                    <p>{project.tags}</p>
+                                
                                
                         </div>
                     </article>
