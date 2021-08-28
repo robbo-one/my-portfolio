@@ -38,13 +38,13 @@ export default function NavBar() {
             Projects
           </NavLink>
           
-          <NavLink
+          {/* <NavLink
             to="/post"
             className="inline-flex items-center py-3 px-10 my-6  rounded text-red-200 text-xl hover:text-green-400"
             activeClassName="text-red-100 bg-red-700"
           >
             Blog 
-          </NavLink>
+          </NavLink>*/}
 
           <NavLink
             to="/contact"
