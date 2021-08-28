@@ -22,12 +22,14 @@ export default function NavBar() {
             Robbo<h5>Home</h5>
           </NavLink>
           <NavLink
-            to="/post"
-            className="inline-flex items-center py-3 px-3 my-6 pr-10 rounded text-red-200 text-xl hover:text-green-400"
+            to="/about"
+            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-xl hover:text-green-400"
             activeClassName="text-red-100 bg-red-700"
           >
-            Blog Posts
+            About Me!
           </NavLink>
+          
+          
           <NavLink
             to="/project"
             className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-xl hover:text-green-400"
@@ -35,13 +37,15 @@ export default function NavBar() {
           >
             Projects
           </NavLink>
+          
           <NavLink
-            to="/about"
-            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-xl hover:text-green-400"
+            to="/post"
+            className="inline-flex items-center py-3 px-3 my-6 pr-10 rounded text-red-200 text-xl hover:text-green-400"
             activeClassName="text-red-100 bg-red-700"
           >
-            About Me!
+            Blog Posts
           </NavLink>
+          
         </nav>
         <div className="inline-flex py-3 px-2 my-6">
           <SocialIcon 
