@@ -12,7 +12,7 @@ export default function NavBar() {
         {/* creates a container around div,
              auto margin around x axis,flex is how we will put everything within this div,
             justify between will make spacing between each thing */}
-        <nav className="flex space-x-1">
+        <nav className="flex space-x-2">
           <NavLink
             to="/"
             exact
@@ -40,10 +40,18 @@ export default function NavBar() {
           
           <NavLink
             to="/post"
-            className="inline-flex items-center py-3 px-3 my-6  rounded text-red-200 text-xl hover:text-green-400"
+            className="inline-flex items-center py-3 px-10 my-6  rounded text-red-200 text-xl hover:text-green-400"
             activeClassName="text-red-100 bg-red-700"
           >
             Blog 
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-xl hover:text-green-400"
+            activeClassName="text-red-100 bg-red-700"
+          >
+            Contact 
           </NavLink>
           
         </nav>
