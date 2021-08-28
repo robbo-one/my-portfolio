@@ -39,10 +39,13 @@ export default function About() {
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-8xl text-black-300 mb-4">
               Hey there. I'm{" "}
-              <span className="text-green-700">{author.name}</span>
+              <span className="text-green-400">{author.name}</span>
             </h1>
             <p className="text-black-200 text-2xl text-lg">{author.bio}</p>
-          </div>
+            <span><a className="text-white rounded text-3xl bg-black focus:ring-2 hover:text-green-500 text-lg" href="https://www.linkedin.com/in/robbo123/" target="_blank"              
+                           rel="noopener noreferrer"  >Or click here</a>
+            </span>
+            </div>
         </section>
       </div>
     </main>
