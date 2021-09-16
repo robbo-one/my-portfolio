@@ -23,7 +23,7 @@ export default function NavBar() {
 
           <NavLink
             to="/about"
-            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-xl  hover:text-green-400"
+            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-2xl  hover:text-green-400"
             activeClassName="text-red-100 bg-red-700"
           >
             About Me!
@@ -32,10 +32,10 @@ export default function NavBar() {
           
           <NavLink
             to="/project"
-            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-xl hover:text-green-400"
+            className="inline-flex items-center py-3 px-10 my-6 rounded text-red-200 text-2xl hover:text-green-400"
             activeClassName="text-red-100 bg-red-700"
           >
-            Projects
+            My Projects
           </NavLink>
           
           {/* <NavLink
