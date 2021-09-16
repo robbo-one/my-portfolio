@@ -43,7 +43,7 @@ export default function About() {
             </h1>
             <p className="text-black-200 text-2xl text-lg">{author.bio}</p>
             <span><a className="text-white rounded text-3xl bg-blue-800 focus:ring-2 hover:text-green-500 text-lg" href="https://www.linkedin.com/in/robbo123/" target="_blank"              
-                           rel="noopener noreferrer">Or click here</a>
+                           rel="noopener noreferrer">Click me!</a>
             </span>
             </div>
         </section>
