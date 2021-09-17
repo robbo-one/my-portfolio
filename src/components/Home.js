@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../parrot.jpg";
-import me from "../me.jpg"
+
 
 export default function Home() {
   return (
