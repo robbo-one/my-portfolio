@@ -6,7 +6,6 @@
   "api": {
     "projectId": "t6lpqmgu",
     "dataset": "production",
-    "useCdn": true,
     "apiVersion": "2021-09-17"
   },
   "plugins": [
