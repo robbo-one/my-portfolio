@@ -32,10 +32,10 @@ export default function Project() {
       }, []);
 
     return (
-      <main className='bg-white min-h-screen p-12'>
+      <main className='bg-black min-h-screen p-12'>
         <section className='container mx-auto'>
-          <h1 className='text-8xl flex justify-center cursive'>Projects</h1>
-          <h2 className='text-lg text-gray-600  flex justify-center mb-12'>
+          <h1 className='text-8xl text-gray-300 flex justify-center cursive'>Projects</h1>
+          <h2 className='text-lg text-gray-300  flex justify-center mb-12'>
             Welcome to my projects page!
           </h2>
           <section className='grid  grid-cols-3 gap-8'>
@@ -43,7 +43,7 @@ export default function Project() {
               projectData.map((project, index) => (
                 <article
                   key={project.title}
-                  className=" border-solid border-2 border-slate-900 bg-gray-200 relative rounded-lg shadow-xl bg-white p-16"
+                  className=" border-solid border-4 border-yellow-400 bg-blue-50 relative rounded-lg shadow-xl bg-white p-16"
                 >
                   <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-green-500'>
                     <a
