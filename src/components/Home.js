@@ -1,5 +1,7 @@
 import React from "react";
-import image from "../parrotedt.jpg";
+import image from "../parrotedt crop.jpg";
+
+
 
 
 
