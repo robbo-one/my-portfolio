@@ -1,5 +1,6 @@
 import React from "react";
-import image from "../parrot.jpg";
+import image from "../parrotedt.jpg";
+
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       />
       <section className='relative flex justify-center min-h-screen lg:pt-75'>
         <h1  className='text-8xl  text-white font-bold cursive pt-1 ml-80 absolute'>
-          Welcome to my portfolio.
+        
           </h1>
       </section>
     </main>
