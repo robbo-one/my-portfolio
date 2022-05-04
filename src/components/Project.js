@@ -43,7 +43,7 @@ export default function Project() {
               projectData.map((project, index) => (
                 <article
                   key={project.title}
-                  className=" border-solid border-2 border-black-500 bg-gray-200 relative rounded-lg shadow-xl bg-white p-16"
+                  className=" border-solid border-2 border-black-900 bg-gray-200 relative rounded-lg shadow-xl bg-white p-16"
                 >
                   <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-green-500'>
                     <a
